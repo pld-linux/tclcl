@@ -53,6 +53,7 @@ Statyczna biblioteka TclCL.
 %patch1 -p1
 
 %build
+cp /usr/share/automake/config.sub .
 %{__autoconf}
 ./configure \
 	--with-tcl-ver=8.4 \
