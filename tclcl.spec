@@ -1,19 +1,19 @@
 Summary:	Tcl/C++ interface
 Summary(pl):	Interfejs Tcl/C++
 Name:		tclcl
-Version:	1.0b13
+Version:	1.15
 Release:	1
 License:	MIT
 Group:		Development/Languages/Tcl
-Source0:	http://www.isi.edu/nsnam/dist/%{name}-src-%{version}.tar.gz
-# Source0-md5:	40af5da9720e029a0fc7afa13f17a74f
-URL:		http://otcl-tclcl.sourceforge.net/otcl/
-Patch0:		%{name}-gcc33.patch
+Source0:	http://dl.sourceforge.net/otcl-tclcl/%{name}-src-%{version}.tar.gz
+# Source0-md5:	0b6403ea9303d776717855eb0828a408
+URL:		http://otcl-tclcl.sourceforge.net/tclcl/
 Patch1:		%{name}-tcl-8.4.patch
 BuildRequires:	autoconf
+BuildRequires:	libstdc++-devel
 BuildRequires:	otcl-devel
-BuildRequires:	tcl-devel = 8.4.4
-BuildRequires:	tk-devel = 8.4.4
+BuildRequires:	tcl-devel >= 8.4
+BuildRequires:	tk-devel >= 8.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,14 +50,13 @@ Statyczna biblioteka TclCL.
 
 %prep
 %setup -q
-%patch0 -p1
 %patch1 -p1
 
 %build
 %{__autoconf}
 ./configure \
-	--with-tcl-ver=8.4.4 \
-	--with-tk-ver=8.4.4
+	--with-tcl-ver=8.4 \
+	--with-tk-ver=8.4
 %{__make} \
 	CCOPT="%{rpmcflags}" \
 	CXXFLAGS="%{rpmcflags}"
