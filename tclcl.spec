@@ -11,6 +11,7 @@ URL:		http://otcl-tclcl.sourceforge.net/tclcl/
 Patch0:		tcl-lib.patch
 Patch1:		%{name}-tcl-8.4.patch
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	otcl-devel
 BuildRequires:	tcl-devel >= 8.4
@@ -29,7 +30,7 @@ vic, vat, rtp_play, ns oraz nam. Zapewnia warstwê C++ nad OTcl.
 Summary:	TclCL header files
 Summary(pl):	Pliki nag³ówkowe TclCL
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 TclCL header files.
@@ -41,7 +42,7 @@ Pliki nag³ówkowe TclCL.
 Summary:	TclCL static library
 Summary(pl):	Statyczna biblioteka TclCL
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 TclCL static library.
