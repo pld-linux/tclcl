@@ -2,12 +2,13 @@ Summary:	Tcl/C++ interface
 Summary(pl):	Interfejs Tcl/C++
 Name:		tclcl
 Version:	1.15
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/Tcl
 Source0:	http://dl.sourceforge.net/otcl-tclcl/%{name}-src-%{version}.tar.gz
 # Source0-md5:	0b6403ea9303d776717855eb0828a408
 URL:		http://otcl-tclcl.sourceforge.net/tclcl/
+Patch0:		otcl-amd64.patch
 Patch1:		%{name}-tcl-8.4.patch
 BuildRequires:	autoconf
 BuildRequires:	libstdc++-devel
@@ -50,6 +51,7 @@ Statyczna biblioteka TclCL.
 
 %prep
 %setup -q
+%patch0 -p1
 %patch1 -p1
 
 %build
