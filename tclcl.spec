@@ -21,7 +21,7 @@ TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic,
 vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.
 
 %description -l pl
-TclCL (Tcl z klasami) jest interfejsem Tcl/C++ u¿ywanym prezz Mash,
+TclCL (Tcl z klasami) jest interfejsem Tcl/C++ u¿ywanym prez Mash,
 vic, vat, rtp_play, ns oraz nam. Zapewnia warstwê C++ nad OTcl.
 
 %package devel
@@ -58,7 +58,9 @@ Statyczna biblioteka TclCL.
 ./configure \
 	--with-tcl-ver=8.4.4 \
 	--with-tk-ver=8.4.4
-%{__make} CCOPT="%{rpmcflags}" CXXFLAGS="%{rpmcflags}"
+%{__make} \
+	CCOPT="%{rpmcflags}" \
+	CXXFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
