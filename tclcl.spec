@@ -31,6 +31,7 @@ Summary:	TclCL header files
 Summary(pl):	Pliki nag³ówkowe TclCL
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	tclcl-static
 
 %description devel
 TclCL header files.
@@ -87,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/*
-
-%files static
-%defattr(644,root,root,755)
 %{_libdir}/*.a
+
+#%files static
+#%defattr(644,root,root,755)
