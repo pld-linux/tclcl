@@ -1,0 +1,14 @@
+diff -urN tclcl-1.0b13/Makefile.in tclcl-1.0b13/Makefile.in
+--- tclcl-1.0b13/Makefile.in	2003-02-14 19:37:46.000000000 +0100
++++ tclcl-1.0b13/Makefile.in	2003-10-30 18:43:00.000000000 +0100
+@@ -105,6 +105,10 @@
+ 	$(TCL_BASE_LIBRARY_FILES) \
+ 	$(LIBRARY_TCL)/http2.3/http.tcl
+ 
++TCL_84_LIBRARY_FILES = \
++	$(TCL_BASE_LIBRARY_FILES) \
++	$(LIBRARY_TCL)/http2.4/http.tcl
++
+ TCL_LIBRARY_FILES = \
+ 	@V_TCL_LIBRARY_FILES@
+ 
