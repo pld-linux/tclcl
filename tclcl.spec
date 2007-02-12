@@ -1,5 +1,5 @@
 Summary:	Tcl/C++ interface
-Summary(pl.UTF-8):   Interfejs Tcl/C++
+Summary(pl.UTF-8):	Interfejs Tcl/C++
 Name:		tclcl
 Version:	1.17
 Release:	1
@@ -28,7 +28,7 @@ vic, vat, rtp_play, ns oraz nam. Zapewnia warstwę C++ nad OTcl.
 
 %package devel
 Summary:	TclCL header files
-Summary(pl.UTF-8):   Pliki nagłówkowe TclCL
+Summary(pl.UTF-8):	Pliki nagłówkowe TclCL
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	tclcl-static
@@ -41,7 +41,7 @@ Pliki nagłówkowe TclCL.
 
 %package static
 Summary:	TclCL static library
-Summary(pl.UTF-8):   Statyczna biblioteka TclCL
+Summary(pl.UTF-8):	Statyczna biblioteka TclCL
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
