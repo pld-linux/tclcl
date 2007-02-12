@@ -1,5 +1,5 @@
 Summary:	Tcl/C++ interface
-Summary(pl):	Interfejs Tcl/C++
+Summary(pl.UTF-8):   Interfejs Tcl/C++
 Name:		tclcl
 Version:	1.17
 Release:	1
@@ -22,13 +22,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic,
 vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.
 
-%description -l pl
-TclCL (Tcl z klasami) jest interfejsem Tcl/C++ uøywanym prez Mash,
-vic, vat, rtp_play, ns oraz nam. Zapewnia warstwÍ C++ nad OTcl.
+%description -l pl.UTF-8
+TclCL (Tcl z klasami) jest interfejsem Tcl/C++ u≈ºywanym prez Mash,
+vic, vat, rtp_play, ns oraz nam. Zapewnia warstwƒô C++ nad OTcl.
 
 %package devel
 Summary:	TclCL header files
-Summary(pl):	Pliki nag≥Ûwkowe TclCL
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe TclCL
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	tclcl-static
@@ -36,19 +36,19 @@ Obsoletes:	tclcl-static
 %description devel
 TclCL header files.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe TclCL.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe TclCL.
 
 %package static
 Summary:	TclCL static library
-Summary(pl):	Statyczna biblioteka TclCL
+Summary(pl.UTF-8):   Statyczna biblioteka TclCL
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 TclCL static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka TclCL.
 
 %prep
